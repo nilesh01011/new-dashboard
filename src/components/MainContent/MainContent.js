@@ -1,26 +1,10 @@
-import React, { useEffect, useState } from 'react'
+import React from 'react'
 
-function MainContent({ theme }) {
-
-    const [isLoading, setIsLoading] = useState(true);
-
-    useEffect(() => {
-        setTimeout(() => {
-            setIsLoading(false)
-        }, 1500)
-    }, [])
+function MainContent() {
 
     return (
         <>
-            {/* {
-                isLoading ? (
-                    <MainContentSkelaton theme={theme} />
-                ) : (
-                )
-            } */}
-            <div className={`w-full h-full ${theme === 'dark' ? 'text-white' : 'text-black'} px-[40px] shadow-[0px_1px_1px_0px_rgba(0,0,0,0.15)]`}>
-                {/* <TopNav theme={theme} /> */}
-                {/* <ContentBody theme={theme} /> */}
+            <div className={`w-full h-full text-black px-[40px] shadow-[0px_1px_1px_0px_rgba(0,0,0,0.15)]`}>
                 <div className='w-full flex flex-col gap-[15px] pt-[10px]'>
                     {/* top side */}
                     <div className='w-full flex items-center justify-between'>
