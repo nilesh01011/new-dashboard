@@ -11,7 +11,7 @@ function DesktopSidebar() {
                     <div className={`w-full flex items-center px-[14px] ${isOpen === true ? 'justify-center' : 'justify-between'}`}>
                         {
                             isOpen === true ? (
-                                <div className='w-[24px] flex flex-col gap-[4px] cursor-pointer h-[24px]' onClick={() => setIsOpen(false)}>
+                                <div className='w-[24px] flex flex-col items-center justify-center gap-[4px] cursor-pointer h-[24px]' onClick={() => setIsOpen(false)}>
                                     <span className='w-full h-[2px] rounded-[2px] bg-black'></span>
                                     <span className='w-full h-[2px] rounded-[2px] bg-black'></span>
                                     <span className='w-full h-[2px] rounded-[2px] bg-black'></span>
@@ -19,7 +19,7 @@ function DesktopSidebar() {
                             ) : (
                                 <>
                                     <span>
-                                        <img alt='logo' src='./mahindraLogo.svg' height={24} className='w-full h-[24px] object-contain' />
+                                        <img alt='logo' src='./mahindraLogo.png' height={24} className='w-full h-[24px] object-contain' />
                                     </span>
                                     {/* cancel icons */}
                                     <span onClick={() => setIsOpen(true)} className='cursor-pointer'>
