@@ -32,7 +32,7 @@ function MainContent({ theme }) {
                         <div className='flex gap-[20px] items-center'>
                             <div className='flex gap-[6px] items-center'>
                                 {/* user logo */}
-                                <span className='w-[30px] h-[30px] rounded-full border-[1px] border-[#B5B5B6] bg-[#B5B5B6] text-black font-bold p-[4px]'>JD</span>
+                                <span className='w-[30px] h-[30px] rounded-full border-[1px] border-[#B5B5B6] bg-[#B5B5B6] text-black font-bold p-[4px] flex items-center justify-center'>JD</span>
                                 {/* user name */}
                                 <span className='font-bold'>Welcome, John Doe</span>
                             </div>

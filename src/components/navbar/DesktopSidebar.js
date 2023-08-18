@@ -14,7 +14,7 @@ function DesktopSidebar({ theme, handleTheme }) {
             {/* slg:w-[60px] -w-[120%] */}
             {/* true */}
             {/* slg:w-[282px] w-full */}
-            <nav id="isOpenNavbar" className={` ${isOpen ? '' : 'isOpenNavbar'} h-screen ${theme === "dark" ? 'bg-[#242424]' : 'bg-white'} slg:transition-none transition-all slg:duration-none duration-1000 pt-[14px] flex flex-col justify-between select-none shadow-[0_0_3px_rgba(0,0,0,0.2)]`}>
+            <nav id="isOpenNavbar" className={` ${isOpen ? '' : 'isOpenNavbar'} h-screen ${theme === "dark" ? 'bg-[#242424]' : 'bg-white'} slg:transition-none transition-all slg:duration-none duration-1000 pt-[20px] flex flex-col justify-between select-none shadow-[0_0_3px_rgba(0,0,0,0.2)]`}>
                 <div className='w-full'>
                     {/* buttons */}
                     {/* desktop sizes */}

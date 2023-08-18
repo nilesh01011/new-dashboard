@@ -10,7 +10,7 @@ function Index({ items, isOpen }) {
 
     const [submenu_4, setSubmenu_4] = useState(true);
 
-    const [innerTabsActive, setInnerTabsActive] = useState(0);
+    const [innerTabsActive, setInnerTabsActive] = useState(1);
 
     const [partsTabs, setPartsTabs] = useState(0);
 
@@ -20,7 +20,7 @@ function Index({ items, isOpen }) {
 
     return (
         <div
-            className='my-[1rem]'
+            className='my-[1.5rem]'
         // style={{ padding: collapsed === false ? '0 24px' : '0 22px', }}
         >
             <button type='button' className={`flex flex-col ${isOpen ? 'justify-center group' : 'justify-between'} relative items-center w-full mb-[4px]`}>
@@ -67,7 +67,7 @@ function Index({ items, isOpen }) {
                     <ul className='w-full flex flex-col gap-1'>
                         <li className={`w-auto whitespace-nowrap h-[22px] ${miniTabsOpen === true ? `text-[#FF3E5B] ${theme === 'dark' ? 'bg-[#0B0B0C]' : 'bg-white'}` : `${theme === 'dark' ? 'text-white' : 'text-[#342C2C] hover:bg-[#fff]'}`} text-left pl-[16px] pr-[10px] rounded text-[12px]`}>
                             <div onClick={() => { setMiniTabsOpen(!miniTabsOpen) }} className='w-full flex justify-between items-center'>
-                                <span style={{ color: miniTabsOpen === true && '#FF3E5B' }}>Part Ordering</span>
+                                <span style={{ color: miniTabsOpen === true && '#FF3E5B' }}>PV Dashboard</span>
                                 <BsChevronDown size={18} className={`${miniTabsOpen === true && 'text-[#FF3E5B]'} ${miniTabsOpen === true && ('rotate-180 transition-all')} transition-all`} />
                             </div>
                         </li>
@@ -75,7 +75,9 @@ function Index({ items, isOpen }) {
                             miniTabsOpen === true &&
                             <ul className='w-full flex flex-col gap-1 bg-[#f2f2f2] p-[3px]'>
                                 <li onClick={() => { setInnerTabsActive(1); goToSuggestPage() }} className={`w-auto whitespace-nowrap pl-[26px] ${pathname === suggestPathname && `text-[#FF3E5B] ${theme === 'dark' ? 'bg-[#0B0B0C]' : 'bg-[#F2F2F2]'}`} ${innerTabsActive === 1 ? `text-[#FF3E5B] ${theme === 'dark' ? 'bg-[#0B0B0C]' : 'bg-[#F2F2F2]'}` : `${theme === 'dark' ? 'text-white hover:bg-[#0B0B0C]' : 'text-[#342C2C] hover:bg-[#fff]'}`} text-left rounded py-[5px] text-[12px]`}>
-                                    <span className={`text-[#FF3E5B]`}>Delight To Win</span>
+                                    {/* <span className={`text-[#FF3E5B]`}> */}
+                                    Delight To Win
+                                    {/* </span> */}
                                 </li>
                                 <li onClick={() => setInnerTabsActive(2)} className={`w-auto whitespace-nowrap pl-[26px] ${innerTabsActive === 2 ? `text-[#FF3E5B] ${theme === 'dark' ? 'bg-[#0B0B0C]' : 'bg-[#F2F2F2]'}` : `${theme === 'dark' ? 'text-white hover:bg-[#0B0B0C]' : 'text-[#342C2C] hover:bg-[#fff]'}`} text-left rounded py-[5px] text-[12px]`}>Sales</li>
                                 <li onClick={() => setInnerTabsActive(3)} className={`w-auto whitespace-nowrap pl-[26px] ${innerTabsActive === 3 ? `text-[#FF3E5B] ${theme === 'dark' ? 'bg-[#0B0B0C]' : 'bg-[#F2F2F2]'}` : `${theme === 'dark' ? 'text-white hover:bg-[#0B0B0C]' : 'text-[#342C2C] hover:bg-[#fff]'}`} text-left rounded py-[5px] text-[12px]`}>Manufacturing</li>
@@ -105,8 +107,8 @@ function Index({ items, isOpen }) {
                                         // className={`${miniTabsOpen === true && 'text-[#FF3E5B]'}`}
                                         >Delight to Win</span>
                                     </li>
-                                    <li onClick={() => setInnerTabsActive(2)} className={`w-auto whitespace-nowrap ${innerTabsActive === 2 ? `text-[#FF3E5B] ${theme === 'dark' ? 'bg-[#0B0B0C]' : 'bg-[#F2F2F2]'}` : `${theme === 'dark' ? 'text-white hover:bg-[#0B0B0C]' : 'text-[#342C2C]'}`} text-left pl-[20px] rounded py-[5px] text-[12px]`}>Sales</li>
-                                    <li onClick={() => setInnerTabsActive(3)} className={`w-auto whitespace-nowrap ${innerTabsActive === 3 ? `text-[#FF3E5B] ${theme === 'dark' ? 'bg-[#0B0B0C]' : 'bg-[#F2F2F2]'}` : `${theme === 'dark' ? 'text-white hover:bg-[#0B0B0C]' : 'text-[#342C2C]'}`} text-left pl-[20px] rounded py-[5px] text-[12px]`}>Manufacturing</li>
+                                    <li onClick={() => setInnerTabsActive(2)} className={`w-auto whitespace-nowrap ${innerTabsActive === 2 ? `text-[#FF3E5B] ${theme === 'dark' ? 'bg-[#0B0B0C]' : 'bg-[#F2F2F2]'}` : `${theme === 'dark' ? 'text-white hover:bg-[#0B0B0C]' : 'text-[#342C2C]'}`} text-left pl-[20px] rounded py-[5px] hover:text-[#FF3E5B] text-[12px]`}>Sales</li>
+                                    <li onClick={() => setInnerTabsActive(3)} className={`w-auto whitespace-nowrap ${innerTabsActive === 3 ? `text-[#FF3E5B] ${theme === 'dark' ? 'bg-[#0B0B0C]' : 'bg-[#F2F2F2]'}` : `${theme === 'dark' ? 'text-white hover:bg-[#0B0B0C]' : 'text-[#342C2C]'}`} text-left pl-[20px] rounded py-[5px] hover:text-[#FF3E5B] text-[12px]`}>Manufacturing</li>
                                 </ul>
                             }
                         </ul>
