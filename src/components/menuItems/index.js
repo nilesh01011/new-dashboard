@@ -35,7 +35,7 @@ function Index({ isOpen }) {
 
                 {/* show tooltips */}
 
-                <div className={`group-hover:block hidden rounded-[5px] absolute top-0 left-[70px] w-[200px] p-[5px] h-max z-[99999] border-[1px] bg-white border-[#E6E6E6]`}>
+                <div className={`group-hover:block hidden rounded-[5px] absolute top-1 left-[69px] w-[200px] p-[5px] h-max z-[99999] border-[1px] bg-white border-[#E6E6E6]`}>
                     {/* right arrow */}
                     <span className='absolute -left-[12px] top-[8px]'>
                         <BsFillCaretLeftFill size={18} className='text-white' />
