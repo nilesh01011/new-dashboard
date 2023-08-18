@@ -18,8 +18,12 @@ function Index({ isOpen }) {
             <button type='button' className={`flex flex-col ${isOpen ? 'justify-center group' : 'justify-between'} relative items-center w-full mb-[4px]`}>
                 <div
                     onClick={() => setSubmenu_4(!submenu_4)}
-                    className={`flex items-center px-[14px] h-[40px] ${isOpen ? 'justify-center' : 'justify-between'} w-full ${submenu_4 === true && 'bg-[#F2F2F2]'} hover:bg-[#F2F2F2] hover:text-[#FF3E5B]`}>
-                    <div className={`h-[32px] flex items-center gap-[8px] relative after:content-[''] after:absolute ${isOpen === false ? 'after:-left-[14px]' : 'after:-left-[22px]'} after:top-0 after:bottom-0 after:w-[6px] after:h-full after:block after:z-40 after:bg-[#FF3E5B]`}>
+                    className={`flex items-center px-[14px] h-[40px]
+                     ${isOpen ? 'justify-center' : 'justify-between'} w-full ${submenu_4 === true && 'bg-[#F2F2F2]'}
+                      hover:bg-[#F2F2F2] hover:text-[#FF3E5B]
+                       relative after:content-[''] after:absolute after:left-0 after:top-0 after:bottom-0 after:w-[6px] after:h-full after:block after:z-40 after:bg-[#FF3E5B]`}
+                >
+                    <div className={`h-[32px] flex items-center gap-[8px]`}>
                         <span>
                             <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M14.6453 5.22805L9.44855 0.993922C8.64617 0.336639 7.34886 0.336639 6.55398 0.986279L1.35727 5.22805C0.772355 5.7019 0.397412 6.70311 0.524892 7.45211L1.52224 13.5358C1.70221 14.6211 2.72206 15.5 3.8019 15.5H12.2006C13.273 15.5 14.3003 14.6134 14.4803 13.5358L15.4776 7.45211C15.5976 6.70311 15.2227 5.7019 14.6453 5.22805ZM8.00126 10.6774C6.96642 10.6774 6.12655 9.82138 6.12655 8.76667C6.12655 7.71196 6.96642 6.85597 8.00126 6.85597C9.03611 6.85597 9.87598 7.71196 9.87598 8.76667C9.87598 9.82138 9.03611 10.6774 8.00126 10.6774Z" fill="#FF3E5B"></path></svg>
                         </span>
